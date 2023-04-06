@@ -1,12 +1,14 @@
+from tkinter import W
 import numpy as np
-input = [1,2,3,2.5]
+input = [1,2,3,2.5] # We have 4 input neurons
 
 weights = [
   [.2, .8, -.5, 1.0],
   [.5, -.91, .26, -.3],
   [-.26, -.27, .17, .87]
-]
-biases = [2, 3, .5]
+] # we have are using 3 neurons(3 weight sets), each neuron(weight set) is receiving 4 inputs from 4 input neurons
+
+biases = [2, 3, .5] #since we are using 3 neurons, we need 3 biases
 
 output_data = np.dot(weights, input) + biases
 
@@ -26,7 +28,7 @@ weights2 = [
   [2, -5, .2],
   [-32, 8, .32],
   [21, .54, -.15],
-]
+] # we are still using 3 neurons but this time we are receive 3 inputs since the previous layer had 3 neurons
 biases = [-5, .75, 4]
 
 #now we just do the same equation as the previous layer to the new input data using our new set of neurons

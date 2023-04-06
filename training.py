@@ -12,7 +12,7 @@ import numpy as np
 # numpy's dot method, how is a dot product calculated if the first Array has more than 1 dimension?
 # --First the nested sequence or sequences(the inner array that holds values) has to be the same 1 dimensional shape as the second  array
 # --Secondly all of the nested sequences will return a dot product into new Array
-# --Example the dot product of [[3, 5]], [8, 6] will be [50], the dot product of [[3, 5], [1, 2]], [8, 6] will be [50, 20]
+# --Example the dot product of [[3, 5]], [8, 6] will be [54], the dot product of [[3, 5], [1, 2]], [8, 6] will be [54, 20]
 # --As you can see if a nDArray is multiplied by a 1D Array, each nested sequence will return a value and the value from the entire method will be an array containing dot products
 # --The depth of the array will be 1 nested level shallower than the original nD array
 # what is a batch? A batch is a layer that processing mulitple input sets at the same time. The layer remains the same in this case but inputs are now given in sets as a matrix/nDArray
